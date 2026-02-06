@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+.env
+venv/
+.env.*
+
+# Virtual Environment
+.virtualenv/
+env/
+ENV/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Security Sensitive Files
+secrets.txt
+credentials.txt
+*.key
+*.pem
+
+# Packet Captures (optional large files)
+*.pcap
+*.pcapng
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# AWS
+.aws/
+
+# Temporary Files
+*.tmp
+*.bak
