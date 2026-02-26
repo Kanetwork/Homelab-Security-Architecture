@@ -1,4 +1,4 @@
-## <u><strong>Project: Private Storage Lab (Nextcloud/Docker)v1.0</stong></u>
+## <u><strong>Project: Private Storage Lab (Nextcloud/Docker)</stong></u>
 
 ## 📌 Overview
 Built a self-hosted "Private Cloud" storage solution on an Ubuntu Server environment. The goal was to replace third-party cloud providers with a secure, locally-owned alternative for family media and document storage.
@@ -30,8 +30,8 @@ Built a self-hosted "Private Cloud" storage solution on an Ubuntu Server environ
 |Role | Product |
 | :--- | :---|
 | Virtualisation software | Virtualbox |
-| OS | Ubuntu 24.04 LTS (Server) |
-| OS | Ubuntu 24.04.3 (Noble) (Admin/client) |
+| Server | Ubuntu 24.04 LTS |
+| Admin/client | Ubuntu 24.04.3 (Noble) |
 
 ## 📊 Results
 ![Nextcloud photo server](./Screenshots/Photo_Cloud_Svr.png) 
@@ -45,7 +45,7 @@ The Error: **'docker.errors.DockerException: Error while fetching server API ver
 
 * The Cause: My user account was not part of the docker Unix group, meaning I lacked the necessary permissions to communicate with the Docker daemon socket.
 
-* The Fix: * Used **'sudo usermod -aG docker $USER'** to modify user groups. Identified that Linux group changes require a fresh login session to initialize. Used newgrp docker to immediately reload the group context without a full reboot.
+* The Fix: Used **'sudo usermod -aG docker $USER'** to modify user groups. Identified that Linux group changes require a fresh login session to initialize. Used newgrp docker to immediately reload the group context without a full reboot.
 
 * Security Lesson: Learned about the Principle of Least Privilege and how Docker group membership is effectively root-equivalent access on a Linux system.
 
